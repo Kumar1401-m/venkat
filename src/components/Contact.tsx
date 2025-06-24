@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Email</p>
-                      <p className="text-gray-600">cnvkumar@entrepreneur.com</p>
+                      <p className="text-gray-600">nagavenkatakumar1401@gmail.com</p>
                     </div>
                   </div>
 
@@ -103,7 +103,7 @@ const Contact: React.FC = () => {
                   </a>
 
                   <a 
-                    href="https://twitter.com/cnvkumar" 
+                    href="https://x.com/kumar___777?t=alF9tmjvZwRhF3TnFNZQ-A&s=09" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 bg-sky-50 rounded-lg hover:bg-sky-100 transition-colors group"
