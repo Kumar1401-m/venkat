@@ -113,7 +113,7 @@ const Contact: React.FC = () => {
                   </a>
 
                   <a 
-                    href="https://instagram.com/cnvkumar" 
+                    href="https://www.instagram.com/kumar__777?igsh=YzAya25sanppOTQ3" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 bg-pink-50 rounded-lg hover:bg-pink-100 transition-colors group"
