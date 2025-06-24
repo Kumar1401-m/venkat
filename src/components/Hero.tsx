@@ -25,20 +25,40 @@ const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        {/* Profile Image */}
-        <div className="mb-8 relative">
-          <div className="w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 animate-pulse">
-            <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
+        {/* Enhanced Profile Image */}
+        <div className="mb-8 relative group">
+          <div className="relative">
+            {/* Outer rotating ring */}
+            <div className="absolute inset-0 w-44 h-44 mx-auto rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-spin" style={{ animationDuration: '8s' }}></div>
+            
+            {/* Middle pulsing ring */}
+            <div className="absolute inset-2 w-40 h-40 mx-auto rounded-full bg-gradient-to-r from-purple-400 to-blue-400 animate-pulse"></div>
+            
+            {/* Inner image container */}
+            <div className="relative w-40 h-40 mx-auto rounded-full bg-white p-1 shadow-2xl">
               <img 
                 src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" 
                 alt="Chembeti Naga Venkata Kumar"
-                className="w-full h-full rounded-full object-cover"
+                className="w-full h-full rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
               />
             </div>
+            
+            {/* Floating sparkle icons */}
+            <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center animate-bounce">
+              <Sparkles className="w-4 h-4 text-white" />
+            </div>
+            
+            <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center animate-pulse">
+              <Target className="w-3 h-3 text-white" />
+            </div>
+            
+            <div className="absolute top-4 -left-4 w-5 h-5 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center animate-ping">
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+            </div>
           </div>
-          <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center">
-            <Sparkles className="w-4 h-4 text-white" />
-          </div>
+          
+          {/* Glowing effect */}
+          <div className="absolute inset-0 w-44 h-44 mx-auto rounded-full bg-gradient-to-r from-blue-400/20 to-purple-400/20 blur-xl animate-pulse"></div>
         </div>
 
         {/* Main Content */}
@@ -58,15 +78,15 @@ const Hero: React.FC = () => {
 
         {/* Key Highlights */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all">
             <Target className="w-5 h-5 text-blue-600" />
             <span className="text-gray-700 font-medium">Strategic Vision</span>
           </div>
-          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all">
             <Lightbulb className="w-5 h-5 text-yellow-600" />
             <span className="text-gray-700 font-medium">Creative Innovation</span>
           </div>
-          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+          <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all">
             <Sparkles className="w-5 h-5 text-purple-600" />
             <span className="text-gray-700 font-medium">Market Disruption</span>
           </div>
