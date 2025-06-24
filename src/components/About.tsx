@@ -55,7 +55,7 @@ const About: React.FC = () => {
             <div className="relative">
               <div className="relative z-10">
                 <img 
-                  src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" 
+                  src="project copy.jpg" 
                   alt="Professional workspace"
                   className="rounded-2xl shadow-2xl"
                 />
