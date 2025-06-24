@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             {/* Inner image container */}
             <div className="relative w-40 h-40 mx-auto rounded-full bg-white p-1 shadow-2xl">
               <img 
-                src="project.jpg" 
+                src="project1.jpg" 
                 alt="Chembeti Naga Venkata Kumar"
                 className="w-full h-full rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform duration-300"
               />
