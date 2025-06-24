@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Phone</p>
-                      <p className="text-gray-600">+91 98765 43210</p>
+                      <p className="text-gray-600">+91 62814 51401</p>
                     </div>
                   </div>
 
@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Location</p>
-                      <p className="text-gray-600">Hyderabad, India</p>
+                      <p className="text-gray-600">Guntur, India</p>
                     </div>
                   </div>
 
@@ -123,7 +123,7 @@ const Contact: React.FC = () => {
                   </a>
 
                   <a 
-                    href="https://github.com/cnvkumar" 
+                    href="https://github.com/Kumar1401-m/venkat" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group"
